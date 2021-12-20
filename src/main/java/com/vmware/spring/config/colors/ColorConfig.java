@@ -8,7 +8,6 @@ import javax.validation.constraints.NotBlank;
 
 @ConstructorBinding
 @ConfigurationProperties(prefix = "color")
-//@Validated
 @Profile("color")
 public class ColorConfig {
 

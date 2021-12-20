@@ -25,4 +25,5 @@
       "type": "java.lang.String",
       "description": "The color that the app should use for the theme."
     }
-  ] }
+  ]
+}

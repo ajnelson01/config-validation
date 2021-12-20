@@ -6,7 +6,6 @@ shape:
     - 'Triangle'
     - 'Circle'
     - 'Trapezoid'
-  someIncorrectKey: ''
 
 ---
 spring:
