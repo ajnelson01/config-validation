@@ -1,3 +1,9 @@
 animal:
   coolest: 'dog'
   lamest: 'prairie dog'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, env

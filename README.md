@@ -13,4 +13,7 @@ Scenarios:
    2. Notice the app will not start up because it tries to look for the "favorite" env var but cannot find it
    3. Fix by specifying config with `SPRING_PROFILES_ACTIVE=dev,shape FAVORITE=Triangle ./gradlew bootRun`
    4. This feature is structured better than color because it strictly requires all config to successfully activate
+5. Turn on everything
+   1. Run `SPRING_PROFILES_ACTIVE=dev,color,shape FAVORITE=Triangle ./gradlew bootRun`
+   2. Visit `http://localhost:8080/actuator/env` to debug where the env vars came from and their resolved values
    
