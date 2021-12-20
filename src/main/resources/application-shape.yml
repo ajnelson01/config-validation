@@ -1,0 +1,8 @@
+shape:
+  favorite: 'Triangle'
+  types:
+    - 'Square'
+    - 'Oval'
+    - 'Triangle'
+    - 'Circle'
+    - 'Trapezoid'
