@@ -1,8 +1,17 @@
 shape:
-  favorite: 'Triangle'
+  favorite: '${favorite:}' # use blank as fallback value
   types:
     - 'Square'
     - 'Oval'
     - 'Triangle'
     - 'Circle'
     - 'Trapezoid'
+  someIncorrectKey: ''
+
+---
+spring:
+  config:
+    activate:
+      on-cloud-platform: cloud_foundry
+shape:
+  favorite: '${vcap.services.shape.favorite:}'

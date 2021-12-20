@@ -1,5 +1,6 @@
 package com.vmware.spring.config.shapes;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,7 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/shapes")
+@RequestMapping("/api/shapes")
+@Profile("shape")
 public class ShapeController {
 
     private final ShapeConfig shapeConfig;

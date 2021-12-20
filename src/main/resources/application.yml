@@ -1,1 +1,21 @@
+# Don't set animal values here to make them required on the cloud platforms
 
+---
+spring:
+  config:
+    activate:
+      on-cloud-platform: cloud_foundry
+
+animal:
+  coolest: ${vcap.services.animal.coolest:}
+  lamest: ${vcap.services.animal.coolest:}
+
+---
+spring:
+  config:
+    activate:
+      on-cloud-platform: kubernetes
+
+animal:
+  coolest: ${ANIMAL_COOLEST:}
+  lamest: ${ANIMAL_LAMEST:}

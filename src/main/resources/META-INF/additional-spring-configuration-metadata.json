@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "name": "animal.lamest",
+      "type": "java.lang.String",
+      "description": "The lamest type of animal."
+    },
+    {
+      "name": "animal.coolest",
+      "type": "java.lang.String",
+      "description": "The coolest type of animal."
+    },
+    {
+      "name": "shape.favorite",
+      "type": "java.lang.String",
+      "description": "Define your favorite shape."
+    },
+    {
+      "name": "shape.types",
+      "type": "java.lang.String",
+      "description": "All the shapes that the app should know about."
+    },
+    {
+      "name": "color.appColor",
+      "type": "java.lang.String",
+      "description": "The color that the app should use for the theme."
+    }
+  ] }

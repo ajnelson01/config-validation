@@ -2,6 +2,7 @@ package com.vmware.spring.config.shapes;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConstructorBinding;
+import org.springframework.context.annotation.Profile;
 import org.springframework.validation.annotation.Validated;
 
 import javax.validation.constraints.NotBlank;
@@ -12,6 +13,7 @@ import java.util.List;
 @ConstructorBinding
 @ConfigurationProperties(prefix = "shape")
 @Validated
+@Profile("shape")
 public class ShapeConfig {
 
     @NotBlank
